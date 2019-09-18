@@ -1,11 +1,25 @@
+h1 {
+    color: red;
+    font-family: 'Press Start 2P', cursive;
+}
+
+a {
+    color: red;
+    font-family: 'Press Start 2P', cursive;
+}
+
 body {
     background-color: black;
 }
 
 #clockDisplay {
     color: red;
+    position: relative;
     font-size: 97pt;
+    margin-top: 200px;
     text-align: center;
-    margin-top: 300px;
+    /* top: 100%; /* Move element down 50% of the height of the parent */
+    /* left: 50%; /* Move element down 50% of the width of the parent */
     font-family: 'Press Start 2P', cursive;
+    /* transform: translateX(-50%) translateY(-50%); /* Move the element 50% of its width to left and 50% of its height up */
 }

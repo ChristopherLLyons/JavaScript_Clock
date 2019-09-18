@@ -9,6 +9,8 @@ function showTime() {
     var minute = date.getMinutes(); // 0 - 59
     var seconds = date.getSeconds(); // 0 - 59
     var period = "AM"; //We're going to
+    var month = date.getMonth();
+    var day = date.getDay();
 
     //We need to make sure the hour is properly represented in 12-hr time, and we also need to determine whether we should display AM or PM
 
@@ -33,6 +35,7 @@ function showTime() {
     minute = (minute < 10) ? ("0" + minute) : minute;
 
     seconds = (seconds < 10) ? ("0" + seconds) : seconds;
+
     
      
     var time = hour + "." + minute + "." + seconds + " " + period;
